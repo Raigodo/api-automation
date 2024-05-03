@@ -1,15 +1,15 @@
 import { request } from '../../utils/requests.js'
 
-export async function getBooks() {
+export async function getGreetings() {
     it('Retrieve list of books', async function () {
-        await request(this, 'GET', '/books', undefined, true, 
+        await request(this, 'GET', '/greetings', undefined, true, 
             {
                 statusCode : 200,
                 expectedFields: [
-                    '0.id'
+                    'greeting'
                 ],
                 expectedValues: [
-                                    {path: '0.id', value: 1}
+                                    {path: 'greeting', value: "Hello from Python App!"}
                                 ]
             }
         )

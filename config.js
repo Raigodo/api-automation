@@ -1,12 +1,12 @@
 export const config = {
     DEV: {
-        host: 'http://localhost:2345',
+        host: 'http://localhost:5000',
     },
     STG: {
-        host: 'http://localhost:1235',
+        host: 'http://localhost:5000',
     },
     PRD: {
-        host: 'http://localhost:1236',
+        host: 'http://localhost:5000',
     }
 }
 
